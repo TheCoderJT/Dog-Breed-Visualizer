@@ -1,0 +1,184 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: auto;
+	width: 100%;
+	background-color: rgb(229, 255, 202);
+	margin: 0;
+	padding: 0;
+	z-index: 0;
+	overflow-x: hidden;
+}
+
+nav {
+	background-image: url(https://st.depositphotos.com/1915959/3081/v/950/depositphotos_30810581-stock-illustration-dog-paws-seamless-pattern.jpg);
+	background-blend-mode: soft-light;
+	background-color: rgb(62, 117, 64);
+	background-size: fill;
+	color: rgb(255, 255, 255);
+	box-shadow: 0px 1px 4px black;
+}
+.nav-list {
+	height: 125px;
+	width: 100%;
+	display: flex;
+	justify-items: center;
+	padding: 12px;
+	margin: 0;
+}
+
+.title-span {
+	padding: 5px;
+	width: 100%;
+	justify-items: left;
+	align-items: center;
+}
+
+.img-container {
+	padding-top: 10%;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	overflow: hidden;
+}
+
+.dropdown {
+	display: flex;
+	width: 100%;
+	padding: 5px;
+	justify-content: flex-end;
+	align-items: middle;
+}
+
+select {
+	align-self: center;
+	width: 180px;
+	height: 35px;
+	background-color: rgb(255, 255, 255);
+	font-family: "Times New Roman", Times, serif;
+	font-size: 1.1rem;
+}
+
+img {
+	border: 4px solid rgb(47, 47, 47);
+	width: 550px;
+	height: 500px;
+	max-width: 828px;
+}
+
+.h1-p-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+}
+
+h1 {
+	width: 100%;
+	height: auto;
+	font-size: 2.2em;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px black;
+	padding: 0;
+	margin: 0px;
+}
+
+p {
+	font-size: 1.2em;
+	text-shadow: 1px 1px 1px black;
+	margin: 0;
+	width: 100%;
+	height: auto;
+}
+
+@keyframes spin {
+	to {
+		transform: rotateZ(360deg);
+	}
+}
+
+.spinner {
+	overflow: hidden;
+	font-size: 4rem;
+	text-align: center;
+	margin-top: 200px;
+	animation: 1s spin linear infinite;
+	display: none;
+	width: 100px;
+	height: 100px;
+}
+
+.dog-image {
+	display: none;
+	overflow: hidden;
+}
+
+.show {
+	display: block;
+	overflow: hidden;
+}
+
+@media only screen and (max-width: 450px) {
+	.nav-list {
+		height: 125px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		padding: 0;
+		margin: 0;
+	}
+
+	.title-span {
+		align-content: center;
+		height: 50%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.dropdown {
+		height: 50%;
+		padding: 0;
+		justify-content: center;
+	}
+
+	.h1-p-container {
+		height: 100%;
+		text-align: center;
+	}
+
+	h1 {
+		font-size: 1.75rem;
+		display: inline-block;
+		width: 100%;
+	}
+
+	p {
+		font-size: 1.15rem;
+		display: block;
+		margin: 0;
+	}
+
+	select {
+		align-self: center;
+		width: 200px;
+		height: 30px;
+		background-color: rgb(255, 255, 255);
+		font-family: "Times New Roman", Times, serif;
+		font-size: 1.1rem;
+	}
+
+	img {
+		vertical-align: middle;
+		border: 4px solid rgb(47, 47, 47);
+		width: 550px;
+		height: 500px;
+		max-width: 828px;
+	}
+}
